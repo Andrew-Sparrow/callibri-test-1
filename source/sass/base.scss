@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include t4-desk-regular;
+    color: $ink-base;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+button,
+input {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+button {cursor: pointer;}
+
+@media screen and (max-width: 1024px) {
+    body {
+        @include t4-mob-regular-150;
+    }
+}

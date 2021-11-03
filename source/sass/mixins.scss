@@ -1,0 +1,174 @@
+//Playfair Display
+@mixin playfair-h($fz, $fh) {
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: $fz;
+    line-height: $fh;
+}
+
+@mixin h1-desk {@include playfair-h(72px, 110%);}
+@mixin h2-desk {@include playfair-h(36px, 120%);}
+@mixin h3-desk {@include playfair-h(24px, 120%);}
+@mixin h4-desk {@include playfair-h(20px, 120%);}
+@mixin h1-mob {@include playfair-h(30px, 110%);}
+@mixin h2-mob {@include playfair-h(28px, 130%);}
+@mixin h3-mob {@include playfair-h(18px, 120%);}
+@mixin h0-mob {@include playfair-h(40px, 120%);}
+
+// Open Sans
+@mixin open-sans-text($fz) {
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: $fz;
+}
+
+@mixin t1-desk($weight) {
+    @include open-sans-text(36px);
+    font-weight: $weight;
+    line-height: 130%;
+}
+@mixin t1-desk-bold {@include t1-desk(bold);}
+@mixin t1-desk-light {@include t1-desk(300);}
+@mixin t1-desk-regular {@include t1-desk(normal);}
+
+@mixin t2-desk($weight, $lh: 35px, $ls: -0.04em) {
+    @include open-sans-text(26px);
+    font-weight: $weight;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+@mixin t2-desk-bold {@include t2-desk(bold);}
+@mixin t2-desk-light {@include t2-desk(300);}
+@mixin t2-desk-regular {@include t2-desk(normal, 130%, normal);}
+
+@mixin t3-desk($weight) {
+    @include open-sans-text(18px);
+    line-height: 150%;
+    font-weight: $weight;
+}
+@mixin t3-desk-semibold {@include t3-desk(600);}
+@mixin t3-desk-regular {@include t3-desk(normal);}
+
+@mixin t4-desk($weight, $ls: normal, $tt: none, $lh: 150%) {
+    @include open-sans-text(16px);
+    font-weight: $weight;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-transform: $tt;
+}
+@mixin t4-desk-regular {@include t4-desk(normal);}
+@mixin t4-desk-semibold {@include t4-desk(600, -0.01em);}
+@mixin t4-desk-semibold-50 {@include t4-desk(600, 0.5em, uppercase);}
+@mixin t4-desk-semibold-5 {@include t4-desk(600, 0.05em, uppercase, 22px);}
+
+@mixin t5-desk($weight, $ls: normal, $tt: none) {
+    @include open-sans-text(14px);
+    line-height: 150%;
+    font-weight: $weight;
+    letter-spacing: $ls;
+    text-transform: $tt;
+}
+@mixin t5-desk-regular {@include t5-desk(normal);}
+@mixin t5-desk-semibold {@include t5-desk(600, 0.1em, uppercase);}
+
+@mixin t6-desk($weight, $lh: 160%) {
+    @include open-sans-text(12px);
+    line-height: $lh;
+    font-weight: $weight;
+}
+
+@mixin t6-desk-regular {@include t6-desk(normal);}
+@mixin t6-desk-light {@include t6-desk(300);}
+@mixin t6-desk-semibold {@include t6-desk(600, 150%);}
+
+@mixin t1-mob {
+    @include open-sans-text(28px);
+    line-height: 38px;
+    font-weight: bold;
+}
+
+@mixin t2-mob {
+    @include open-sans-text(28px);
+    line-height: 38px;
+    font-weight: 300;
+}
+
+@mixin t3-mob($weight) {
+    @include open-sans-text(20px);
+    line-height: 27px;
+    font-weight: $weight;
+}
+@mixin t3-mob-bold {@include t3-mob(bold);}
+@mixin t3-mob-light {@include t3-mob(300);}
+
+@mixin t4-mob($weight, $fs: 14px, $lh: 150%, $ls: normal, $tt: none) {
+    @include open-sans-text($fs);
+    font-weight: $weight;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-transform: $tt;
+}
+@mixin t4-mob-regular-150 {@include t4-mob(400);}
+@mixin t4-mob-regular-110 {@include t4-mob(400, 14px, 175%);}
+@mixin t4-mob-semibold-12 {@include t4-mob(600, 12px, 150%, 0.5em, uppercase);}
+@mixin t4-mob-semibold-16 {@include t4-mob(600, 16px, 22px);}
+@mixin t4-mob-bold {@include t4-mob(bold, 13px, 18px, 0.03em, uppercase);}
+
+@mixin t5-mob {
+    @include open-sans-text(12px);
+    line-height: 150%;
+    font-weight: 400;
+}
+
+@mixin t6-mob($weight) {
+    @include open-sans-text(10px);
+    line-height: 160%;
+    font-weight: $weight;
+}
+@mixin t6-mob-regular {@include t6-mob(400);}
+@mixin t6-mob-light {@include t6-mob(300);}
+
+@mixin t0-mob {
+    @include open-sans-text(32px);
+    line-height: 44px;
+    font-weight: normal;
+}
+
+//YesevaOne
+
+@mixin yeseva-one($fz, $lh) {
+    font-family: Yeseva One;
+    font-weight: normal;
+    font-size: $fz;
+    line-height: $lh;
+}
+
+@mixin yeseva-mob {@include yeseva-one(56px, 65px)}
+@mixin yeseva-desk {@include yeseva-one(111px, 128px)}
+
+
+@mixin button($fc, $sc) {
+    @include t3-desk-regular;
+    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out;
+    border: 2px solid $fc;
+    background-color: $fc;
+    color: $sc;
+    &:hover {
+        background-color: $sc;
+        color: $fc;
+        border-color: $sc;
+    }
+}
+
+@mixin button-mobile($fc, $sc) {
+    @include t4-mob-regular-150;
+    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out;
+    border: 2px solid $fc;
+    background-color: $fc;
+    color: $sc;
+    &:hover {
+        background-color: $sc;
+        color: $fc;
+        border-color: $sc;
+    }
+}

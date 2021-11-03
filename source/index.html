@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Посейдон</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/opensans-light.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" crossorigin>
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo logo">
+          <img src="img/logo.svg" alt="Логотип Посейдон" class="logo__image">
+          <div class="logo__text">Клуб полярных путешествий</div>
+        </div>
+
+        <div class="header__content">
+          <div class="header__mobile-content burger-menu-header">
+            <div class="container burger-menu-header__container">
+              <a href="#" class="burger-menu-header__number">+7 (495) 153-28-96</a>
+              <a href="#" class="burger-menu-header__link button-white">ПОДОБРАТЬ КРУИЗ</a>
+              <button class="burger-menu-header__close"></button>
+            </div>
+          </div>
+          <div class="header__block header__block_first">
+            <ul class="header__list header__list_upper">
+              <li class="header__item header__item_dropdown">
+                <a href="" class="header__link">О нас</a>
+                <div class="header__dropdown header-dropdown header-dropdown_upper">
+                  <ul class="header-dropdown__list">
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">1</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">2</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">3</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__item header__item_dropdown header-dropdown_upper">
+                <a href="" class="header__link">Путешественникам</a>
+                <div class="header__dropdown header-dropdown">
+                  <ul class="header-dropdown__list">
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">1</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">2</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">3</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Видео</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Отзывы</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Контакты</a>
+              </li>
+            </ul>
+            <a href="#" class="header__link_number">+7 (495) 153-28-96</a>
+          </div>
+
+          <div class="header__block">
+            <ul class="header__list">
+              <li class="header__item header__item_lower header__item_dropdown">
+                <a href="#" class="header__link">Северный полюс</a>
+                <div class="header__dropdown header-dropdown">
+                  <ul class="header-dropdown__list">
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">На ледоколе к Вершине планеты</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__item header__item_lower header__item_dropdown">
+                <a href="#" class="header__link">Арктика</a>
+                <div class="header__dropdown header-dropdown">
+                  <ul class="header-dropdown__list">
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">В царстве белого медведя</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">Дорогами первопроходцев</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">Три жемчужины Арктики</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">Под куполом Северного сияния</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">Скрытые сокровища Шотландии и Ирландии</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">К неизведанным берегам Арктики</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__item header__item_lower header__item_dropdown">
+                <a href="#" class="header__link">Антарктика</a>
+                <div class="header__dropdown header-dropdown">
+                  <ul class="header-dropdown__list">
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">Мир айсбергов и пингвинов</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">Новогодняя сказка Антарктиды</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">Самое короткое путешествие в Антарктиду</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">Путешествие на Крайний Юг</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">Вся Антарктика в одном путешествии</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__item header__item_lower">
+                <a href="#" class="header__link">Спецпредложения</a>
+              </li>
+              <li class="header__item header__item_dropdown header__item_lower">
+                <a href="#" class="header__link">Наши суда</a>
+                <div class="header__dropdown header-dropdown">
+                  <ul class="header-dropdown__list">
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">1</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">2</a>
+                    </li>
+                    <li class="header-dropdown__item">
+                      <a href="" class="header-dropdown__link">3</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <button class="header__button button">Подобрать круиз</button>
+          </div>
+          <a class="header__nkh header-nkh">
+            <img src="img/icons/NKH-black.svg" alt="NKH Studio Логотип" class="header-nkh__image">
+            <p class="header-nkh__text">Разработка сайта — NKH Studio</p>
+          </a>
+        </div>
+
+        <div class="header__mobile-content">
+          <a href="" class="header__number">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.91422 6.36431C4.17911 6.75772 4.48219 7.15882 4.82959 7.57502C5.62779 8.52513 6.5354 9.33511 7.53892 9.99821L9.36392 8.11853L9.37016 8.11231C9.65247 7.83139 10.0667 7.57502 10.5841 7.57502C11.1898 7.57502 11.6034 7.92535 11.7919 8.12268L13.4567 9.77663C13.7496 10.0681 14.0041 10.485 14 11.008C13.9959 11.5195 13.7463 11.9279 13.4686 12.2175C13.3343 12.3603 13.198 12.4926 13.0665 12.618L13.0505 12.6334C12.8544 12.8229 12.6979 12.9741 12.559 13.1397L12.5423 13.1595L12.5246 13.1785C12.0051 13.7359 11.354 14 10.6008 14C10.5215 14 10.4449 13.9955 10.3999 13.9929L10.3979 13.9928L10.3927 13.9924C9.28169 13.9217 8.2902 13.4962 7.63252 13.1847L7.6267 13.1819C7.31274 13.0307 7.00512 12.8688 6.7041 12.6961C5.22459 11.8478 3.90984 10.7454 2.78969 9.41176L2.78777 9.40947C2.18019 8.68169 1.67309 7.96967 1.25478 7.24396C0.921996 6.66663 0.647491 6.08424 0.42329 5.48242C0.105787 4.6384 -0.047189 3.87461 0.0128193 3.12445L0.0136645 3.11389C0.0680338 2.51425 0.311397 1.98768 0.746168 1.55504L1.78626 0.520048L1.79259 0.513972C2.0893 0.228896 2.50348 0 2.99679 0C3.4899 0 3.89746 0.230708 4.18961 0.518984C4.36425 0.680638 4.53037 0.848778 4.68564 1.00594C4.70998 1.03058 4.73407 1.05496 4.75787 1.07899L4.76293 1.0841C4.80719 1.12944 4.85254 1.17526 4.90124 1.22442L4.90332 1.22652C4.94903 1.27266 4.99764 1.32173 5.04667 1.37187L5.86997 2.19113C6.1474 2.4672 6.42585 2.88131 6.42585 3.41715C6.42585 3.95299 6.1474 4.36709 5.86997 4.64316C5.18857 5.32122 4.5891 5.68009 3.91422 6.36431Z"
+                  fill="white" />
+            </svg>
+          </a>
+          <button class="header__burger burger">
+            <span class="burger__item"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="swiper-container hero-swiper">
+          <div class="swiper-wrapper hero-swiper__wrapper">
+            <div class="swiper-slide hero-swiper__slide">
+              <video autoplay muted loop class="hero__video">
+                <source src="video/hero-background.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="swiper-slide hero-swiper__slide">
+              <video autoplay muted loop class="hero__video">
+                <source src="video/hero-background.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="swiper-slide hero-swiper__slide">
+              <video autoplay muted loop class="hero__video">
+                <source src="video/hero-background.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="container hero__container">
+          <div class="hero__block">
+            <button class="hero__arrow hero__arrow_back arrow">
+              <svg width="107" height="22" viewBox="0 0 107 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#arrow-back"></use>
+              </svg>
+            </button>
+            <h1 class="hero__title">
+              Северный полюс, Арктика и Антарктика
+            </h1>
+            <button class="hero__arrow hero__arrow_forward arrow">
+              <svg width="107" height="22" viewBox="0 0 107 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#arrow-forward"></use>
+              </svg>
+            </button>
+          </div>
+          <a href="#" class="hero__link">Подробнее</a>
+          <div class="swiper-scrollbar hero__scrollbar"></div>
+        </div>
+      </section>
+
+      <div class="search">
+        <div class="search__block">
+          <span class="search__placeholder">
+            Направление
+          </span>
+          <button class="search__input">Северный Полюс</button>
+          <div class="search__dropdown search-dropdown">
+            <ul class="search-dropdown__list">
+              <li class="search-dropdown__item">Северный Полюс</li>
+              <li class="search-dropdown__item">Арктика</li>
+              <li class="search-dropdown__item">Антарктика</li>
+            </ul>
+          </div>
+        </div>
+        <div class="search__block">
+          <span class="search__placeholder">
+            Маршруты
+          </span>
+          <button class="search__input">Фолклендские о-ва, Южная Георгия и Антарктида</button>
+          <div class="search__dropdown search-dropdown">
+            <ul class="search-dropdown__list">
+              <li class="search-dropdown__item">Северный полюс</li>
+              <li class="search-dropdown__item">Арктика</li>
+              <li class="search-dropdown__item">Антарктика</li>
+            </ul>
+          </div>
+        </div>
+        <div class="search__block search__block_date">
+          <span class="search__placeholder">
+            Когда
+          </span>
+          <button class="search__input search__input_date">Месяц – год</button>
+          <div class="search__dropdown search-dropdown">
+            <ul class="search-dropdown__list">
+              <li class="date">
+                <p class="date__year">2021</p>
+                <div class="date__block">
+                  <p class="search-dropdown__item date__item">Октябрь 2021</p>
+                  <p class="search-dropdown__item date__item">Ноябрь 2021</p>
+                  <p class="search-dropdown__item date__item">Декабрь 2021</p>
+                </div>
+              </li>
+              <li class="date">
+                <p class="date__year">2022</p>
+                <div class="date__block">
+                  <p class="search-dropdown__item date__item">Январь 2022</p>
+                  <p class="search-dropdown__item date__item">Февраль 2022</p>
+                  <p class="search-dropdown__item date__item">Март 2022</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="search__button">
+          <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="#search"></use>
+          </svg>
+        </button>
+      </div>
+
+      <section class="direction section">
+        <div class="container direction__container">
+          <h2 class="direction__title title">Направления</h2>
+          <p class="direction__description">Круизы на Северный полюс, в Арктику и Антарктику от Poseidon Expeditions</p>
+          <ul class="direction__list">
+            <li class="direction__item  direction-article card card_link">
+              <img src="img/direction/direction1.jpg" alt="Корабль на северном полюсе"
+                class="direction-article__image card__image">
+              <div class="direction-article__block card__content">
+                <h3 class="direction-article__title card__title">Северный полюс</h3>
+                <p class="direction-article__text">Круизы на Северный полюс, в Арктику и Антарктику от Poseidon
+                  Expeditions</p>
+              </div>
+              <a href="#" class="card__link">Узнать больше</a>
+            </li>
+
+            <li class="direction__item direction-article card card_link">
+              <img src="img/direction/direction2.jpg" alt="Белый медведь" class="direction-article__image card__image">
+              <div class="direction-article__block card__content">
+                <h3 class="direction-article__title">Арктика</h3>
+                <p class="direction-article__text">Круизы на Северный полюс, в Арктику и Антарктику от Poseidon
+                  Expeditions</p>
+              </div>
+              <a href="#" class="card__link">Узнать больше</a>
+            </li>
+            <li class="direction__item direction-article card card_link">
+              <img src="img/direction/direction3.jpg" alt="Пингвины" class="direction-article__image card__image">
+              <div class="direction-article__block card__content">
+                <h3 class="direction-article__title card__title">Антарктика</h3>
+                <p class="direction-article__text">Круизы на Северный полюс, в Арктику и Антарктику от Poseidon
+                  Expeditions</p>
+              </div>
+              <a href="direction.html" class="card__link">Узнать больше</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="recommend section">
+        <div class="recommend__title-block">
+          <button class="recommend__button recommend__button_back arrow">
+            <svg width="107" height="22" viewBox="0 0 107 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#blue-arrow-back"></use>
+            </svg>
+          </button>
+          <h2 class="recommend__title title">Мы рекомендуем</h2>
+          <button class="recommend__button recommend__button_forward arrow">
+            <svg width="107" height="22" viewBox="0 0 107 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#blue-arrow-forward"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="swiper-container recommend-swiper">
+          <div class="swiper-wrapper recommend-swiper__wrapper">
+            <article class="swiper-slide recommend-swiper__slide recommend-article card card_link">
+              <img src="img/recommend/recommend1.jpg" alt="Люди и корабль на заднем фоне" class="recommend-article__image card__image">
+              <div class="recommend-article__block card__content">
+                <h3 class="recommend-article__title card__title">Северный полюс</h3>
+                <p class="recommend-article__description">На ледоколе к вершине планеты</p>
+                <div class="recommend-article__row recommend-article__row_first">
+                  <div class="recommend-article__item recommend-article__item_date">11 дней</div>
+                  <div class="recommend-article__item recommend-article__item_ship">Си Спирит</div>
+                </div>
+                <div class="recommend-article__row price">
+                  <div class="price__text">Стоимость от:</div>
+                  <div class="price__block">
+                    <p class="price__rubles">2 397 318 <span class="price__rubles_symbol">₽</span></p>
+                    <p class="price__dollars">$ 13.226</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="recommend-article__link card__link">Узнать больше</a>
+            </article>
+
+            <article class="swiper-slide recommend-swiper__slide recommend-article card card_link" >
+              <img src="img/recommend/recommend2.jpg" alt="Северное сияние" class="recommend-article__image card__image">
+              <div class="recommend-article__block card__content">
+                <h3 class="recommend-article__title card__title">Восточная Гренландия</h3>
+                <p class="recommend-article__description">Под куполом Северного сияния</p>
+                <div class="recommend-article__row recommend-article__row_first">
+                  <div class="recommend-article__item recommend-article__item_date">11 дней</div>
+                  <div class="recommend-article__item recommend-article__item_ship">Си Спирит</div>
+                </div>
+                <div class="recommend-article__row price">
+                  <div class="price__text">Стоимость от:</div>
+                  <div class="price__block">
+                    <p class="price__rubles">2 397 318 <span class="price__rubles_symbol">₽</span></p>
+                    <p class="price__dollars">$ 13.226</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="recommend-article__link card__link">Узнать больше</a>
+            </article>
+
+            <article class="swiper-slide recommend-swiper__slide recommend-article card card_link">
+              <img src="img/recommend/recommend3.jpg" alt="белые медведи" class="recommend-article__image card__image">
+              <div class="recommend-article__block card__content">
+                <h3 class="recommend-article__title card__title">Земля Франца-Иосифа</h3>
+                <p class="recommend-article__description">На ледоколе к вершине планеты</p>
+                <div class="recommend-article__row recommend-article__row_first">
+                  <div class="recommend-article__item recommend-article__item_date">11 дней</div>
+                  <div class="recommend-article__item recommend-article__item_ship">Си Спирит</div>
+                </div>
+                <div class="recommend-article__row price">
+                  <div class="price__text">Стоимость от:</div>
+                  <div class="price__block">
+                    <p class="price__rubles">2 397 318 <span class="price__rubles_symbol">₽</span></p>
+                    <p class="price__dollars">$ 13.226</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="recommend-article__link card__link">Узнать больше</a>
+            </article>
+
+            <article class="swiper-slide recommend-swiper__slide recommend-article card card_link">
+              <img src="img/recommend/recommend1.jpg" alt="Люди и корабль на заднем фоне" class="recommend-article__image card__image">
+              <div class="recommend-article__block card__content">
+                <h3 class="recommend-article__title card__title">Северный полюс</h3>
+                <p class="recommend-article__description">На ледоколе к вершине планеты</p>
+                <div class="recommend-article__row recommend-article__row_first">
+                  <div class="recommend-article__item recommend-article__item_date">11 дней</div>
+                  <div class="recommend-article__item recommend-article__item_ship">Си Спирит</div>
+                </div>
+                <div class="recommend-article__row price">
+                  <div class="price__text">Стоимость от:</div>
+                  <div class="price__block">
+                    <p class="price__rubles">2 397 318 <span class="price__rubles_symbol">₽</span></p>
+                    <p class="price__dollars">$ 13.226</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="recommend-article__link card__link">Узнать больше</a>
+            </article>
+
+            <article class="swiper-slide recommend-swiper__slide recommend-article card card_link">
+              <img src="img/recommend/recommend2.jpg" alt="Северное сияние" class="recommend-article__image card__image">
+              <div class="recommend-article__block card__content">
+                <h3 class="recommend-article__title card__title">Восточная Гренландия</h3>
+                <p class="recommend-article__description">Под куполом Северного сияния</p>
+                <div class="recommend-article__row recommend-article__row_first">
+                  <div class="recommend-article__item recommend-article__item_date">11 дней</div>
+                  <div class="recommend-article__item recommend-article__item_ship">Си Спирит</div>
+                </div>
+                <div class="recommend-article__row price">
+                  <div class="price__text">Стоимость от:</div>
+                  <div class="price__block">
+                    <p class="price__rubles">2 397 318 <span class="price__rubles_symbol">₽</span></p>
+                    <p class="price__dollars">$ 13.226</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="recommend-article__link card__link">Узнать больше</a>
+            </article>
+
+            <article class="swiper-slide recommend-swiper__slide recommend-article card card_link">
+              <img src="img/recommend/recommend3.jpg" alt="Белые медведи" class="recommend-article__image card__image">
+              <div class="recommend-article__block card__content">
+                <h3 class="recommend-article__title card__title">Земля Франца-Иосифа</h3>
+                <p class="recommend-article__description">На ледоколе к вершине планеты</p>
+                <div class="recommend-article__row recommend-article__row_first">
+                  <div class="recommend-article__item recommend-article__item_date">11 дней</div>
+                  <div class="recommend-article__item recommend-article__item_ship">Си Спирит</div>
+                </div>
+                <div class="recommend-article__row price">
+                  <div class="price__text">Стоимость от:</div>
+                  <div class="price__block">
+                    <p class="price__rubles">2 397 318 <span class="price__rubles_symbol">₽</span></p>
+                    <p class="price__dollars">$ 13.226</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="recommend-article__link card__link">Узнать больше</a>
+            </article>
+          </div>
+          <div class="swiper-scrollbar recommend-swiper__scrollbar"></div>
+        </div>
+      </section>
+
+      <section class="special-offer">
+        <div class="swiper-container special-offer-swiper">
+          <div class="swiper-wrapper special-offer-swiper__wrapper">
+
+            <div class="swiper-slide special-offer-swiper__slide special-offer-swiper__slide_1">
+              <img src="img\special-offer\white-bear-bg.jpg" alt="" class="special-offer-swiper__image">
+              <div class="container special-offer-swiper__container">
+                <p class="special-offer-swiper__text">Архипелаг Шпицберген</p>
+                <h3 class="special-offer-swiper__title">В царстве белого медведя</h3>
+                <p class="special-offer-swiper__date">1 ИЮН – 8 ИЮН 2021</p>
+                <p class="special-offer-swiper__price">339 933 <span class="special-offer-swiper__price_rubles">₽</span>
+                </p>
+                <button class="special-offer-swiper__link special-offer-swiper__link_more button">Подробнее</button>
+                <button class="special-offer-swiper__link special-offer-swiper__link_all button-white">Все
+                  спецпредложения</button>
+              </div>
+            </div>
+            <div class="swiper-slide special-offer-swiper__slide special-offer-swiper__slide_2">
+
+            </div>
+            <div class="swiper-slide special-offer-swiper__slide special-offer-swiper__slide_3">
+
+            </div>
+          </div>
+          <div class="swiper-scrollbar special-offer__scrollbar"></div>
+        </div>
+
+        <div class="container special-offer__container">
+          <h2 class="special-offer__title title">Спецпредложение</h2>
+          <button class="special-offer__arrow special-offer__arrow_back arrow">
+            <svg width="107" height="22" viewBox="0 0 107 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L0.999954 11M0.999954 11L11 21M0.999954 11H106.5" stroke="white" />
+            </svg>
+          </button>
+          <button class="special-offer__arrow special-offer__arrow_forward arrow">
+            <svg width="107" height="22" viewBox="0 0 107 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M95.5 1L105.5 11M105.5 11L95.5 21M105.5 11H0" stroke="white" />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="why-us section">
+        <div class="container">
+          <h2 class="why-us__title title">Почему нас выбирают?</h2>
+          <p class="why-us__text">
+            Оператор круизов в полярные регионы Poseidon Expeditions уже 20 лет остается одним из лидеров рынка
+            путешествий в нетронутые цивилизацией уголки планеты. Наша цель – предложить вам оптимальный баланс между
+            атмосферой приключений и исключительным комфортом.
+          </p>
+
+          <div class="why-us__pagination-container">
+            <div class="swiper-pagination why-us__pagination"></div>
+          </div>
+        </div>
+
+        <div class="why-us__block">
+          <div class="container why-us__container">
+            <div class="swiper-container why-us-swiper">
+              <div class="swiper-wrapper why-us-swiper__wrapper">
+                <div class="swiper-slide why-us-swiper__slide why-us-slide">
+                  asdasds
+                </div>
+                <div class="swiper-slide why-us-swiper__slide why-us-slide">
+                  asdasds
+                </div>
+
+                <div class="swiper-slide why-us-swiper__slide why-us-slide">
+                  <h3 class="why-us-slide__title">Эксплуатация малых судов</h3>
+                  <p class="why-us-slide__text">В полярных регионах малое судно отличается неоспоримыми преимуществами.
+                    Благодаря небольшим размерам, оно заходит в бухты и проливы, закрытые для больших судов. </p>
+                  <div class="why-us-slide__content">
+                    <a href="#" class="why-us-slide__col card card_scale">
+                      <img src="img/why-us/slide-img1-mobile.jpg" alt="Ледокол на льду" class="why-us-slide__image card__image">
+                      <div class="why-us-slide__block card__content">
+                        <h3 class="why-us-slide__slide-title card__title">Ледокол «50 лет Победы»</h3>
+                        <p class="why-us-slide__description">Атомный ледокол</p>
+                      </div>
+                    </a>
+                    <a href="#" class="why-us-slide__col card card_scale">
+                      <img src="img/why-us/slide-img2.jpg" alt="Судно на плаву" class="why-us-slide__image card__image">
+                      <div class="why-us-slide__block card__content">
+                        <h3 class="why-us-slide__slide-title card__title">Судно «Си Спирит»</h3>
+                        <p class="why-us-slide__description">Судно ледового класса</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-slide why-us-swiper__slide why-us-slide">
+                  asdasds
+                </div>
+
+                <div class="swiper-slide why-us-swiper__slide why-us-slide">
+                  asdasds
+                </div>
+
+                <div class="swiper-slide why-us-swiper__slide why-us-slide">
+                  asdasds
+                </div>
+              </div>
+
+              <div class="why-us-swiper__buttons-block">
+                <button class="why-us-swiper__arrow why-us-swiper__arrow_back arrow-blue">
+                  <svg width="93" height="16" viewBox="0 0 93 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.292892 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM93 9H1V7H93V9Z"
+                      fill="#5DA2D6" />
+                  </svg>
+                </button>
+                <button class="why-us-swiper__arrow why-us-swiper__arrow_forward arrow-blue">
+                  <svg width="93" height="16" viewBox="0 0 93 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M92.7071 8.70711C93.0976 8.31658 93.0976 7.68342 92.7071 7.29289L86.3431 0.928932C85.9526 0.538408 85.3195 0.538408 84.9289 0.928932C84.5384 1.31946 84.5384 1.95262 84.9289 2.34315L90.5858 8L84.9289 13.6569C84.5384 14.0474 84.5384 14.6805 84.9289 15.0711C85.3195 15.4616 85.9526 15.4616 86.3431 15.0711L92.7071 8.70711ZM0 9H92V7H0V9Z"
+                      fill="#5DA2D6" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="numbers">
+        <div class="container">
+          <h2 class="numbers__title">Poseidon Expeditions в цифрах</h2>
+          <ul class="numbers__list">
+            <li class="numbers__item number">
+              <h3 class="number__title">20</h3>
+              <p class="number__text">seasons to the North Pole on board nuclear-powered icebreakers</p>
+            </li>
+            <li class="numbers__item number">
+              <h3 class="number__title">5</h3>
+              <p class="number__text">consecutive years operating Sea Spirit to the Arctic and Antarctica</p>
+            </li>
+            <li class="numbers__item number">
+              <h3 class="number__title">14</h3>
+              <p class="number__text">direct crossings between Svalbard and Franz Josef Land with Sea Spirit</p>
+            </li>
+            <li class="numbers__item number">
+              <h3 class="number__title">20400</h3>
+              <p class="number__text">Passengers with dreams fulfilled in the Arctic and Antarctica</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="video-360 section">
+        <div class="container video-360__container">
+          <h2 class="video-360__title title">Видео 360 на Северном полюсе</h2>
+          <div class="video-360__image-block">
+            <a href="" class="video-360__play"></a>
+          </div>
+          <a href="" class="video-360__link">Инструкция</a>
+        </div>
+      </section>
+
+      <section class="reviews section">
+        <div class="container reviews__container">
+          <h2 class="reviews__title title">Отзывы</h2>
+
+          <div class="swiper-container reviews-swiper card-swiper" data-mobile='false'>
+            <div class="swiper-wrapper reviews-swiper__wrapper">
+
+              <div class="swiper-slide reviews-swiper__slide review card card card_link">
+                <img src="img/reviews/reviews1.jpg" alt="Люди в лодке на фоне медведя" class="review__image card__image">
+                <div class="review__block card__content">
+                  <div class="review__text-block">
+                    <p class="review__name">Сергей, Казань</p>
+                    <div class="social review__social">
+                      <a href="#" class="social__link social__link_facebook review__social-item"></a>
+                      <a href="#" class="social__link social__link_instagram review__social-item"></a>
+                    </div>
+                  </div>
+                  <h3 class="review__title card__title">Отзыв о путешествии на Северный полюс</h3>
+                  <p class="review__cruise">Круиз: В царстве белого медведя
+                    Дата: 27 Июня 2018</p>
+                  <p class="review__text">"Круиз нам безусловно понравился, впечатления...</p>
+                </div>
+                <a href="#" class="card__link">Узнать больше</a>
+              </div>
+
+              <div class="swiper-slide reviews-swiper__slide review card card_link">
+                <img src="img/reviews/reviews2.jpg" alt="Люди на корабле" class="review__image card__image">
+                <div class="review__block card__content">
+                  <div class="review__text-block">
+                    <p class="review__name">Илона , Москва</p>
+                    <div class="social review__social">
+                      <a href="#" class="social__link social__link_facebook review__social-item"></a>
+                      <a href="#" class="social__link social__link_instagram review__social-item"></a>
+                    </div>
+                  </div>
+                  <h3 class="review__title card__title">Отзыв о путешествии в Антарктиду</h3>
+                  <p class="review__cruise">Круиз: Мир айсбергов и пингвинов
+                    Дата: 15 Февраля 2020</p>
+                  <p class="review__text">"Экспедиция понравилась - много успели."</p>
+                </div>
+                <a href="#" class="card__link">Узнать больше</a>
+              </div>
+
+              <div class="swiper-slide reviews-swiper__slide review card card_link">
+                <img src="img/reviews/reviews3.jpg" alt="Пингвины на камнях" class="review__image card__image">
+                <div class="review__block card__content">
+                  <div class="review__text-block">
+                    <p class="review__name">Елена, Новосибирск</p>
+                    <div class="social review__social">
+                      <a href="#" class="social__link social__link_facebook review__social-item"></a>
+                      <a href="#" class="social__link social__link_instagram review__social-item"></a>
+                    </div>
+                  </div>
+                  <h3 class="review__title card__title">Отзыв о путешествии к берегам Антарктиды</h3>
+                  <p class="review__cruise">Круиз: В царстве китов и айсбергов
+                    Дата: 4 Мая 2018</p>
+                  <p class="review__text">"Впечатлений море, но это просто незабываемо....</p>
+                </div>
+                <a href="#" class="card__link">Узнать больше</a>
+              </div>
+            </div>
+            <div class="swiper-scrollbar reviews-swiper__scrollbar"></div>
+          </div>
+          <a href="" class="reviews__link button">Все отзывы</a>
+        </div>
+      </section>
+
+      <section class="cruise section">
+        <div class="container cruise__container">
+          <h2 class="cruise__title title">Подобрать круиз</h2>
+          <div class="cruise__block cruise__block">
+            <div class="cruise__image"></div>
+            <form action="POST" class="cruise__form cruise-form">
+              <div class="cruise-form__block">
+                <label class="cruise-form__label">
+                  <span class="cruise-form__text">Ваше имя</span>
+                  <input type="text" class="cruise-form__input">
+                </label>
+                <label class="cruise-form__label">
+                  <span class="cruise-form__text">Телефон</span>
+                  <input type="text" class="cruise-form__input">
+                </label>
+                <label class="cruise-form__label">
+                  <span class="cruise-form__text">E-mail</span>
+                  <input type="text" class="cruise-form__input">
+                </label>
+                <label class="cruise-form__label">
+                  <span class="cruise-form__text">Направления</span>
+                  <input type="text" class="cruise-form__input">
+                </label>
+                <label class="cruise-form__label">
+                  <span class="cruise-form__text cruise-form__text_coment">
+                    Комментарий<br>
+                    <span class="cruise-form__text_small">Укажите желаемую дату круиза, кол-во человек и др.</span>
+                  </span>
+                  <input type="text" class="cruise-form__input cruise-form__input">
+                </label>
+              </div>
+              <button class="cruise-form__submit button">Отправить запрос</button>
+              <p class="cruise-form__description">
+                Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с политикой
+                конфиденциальности
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer section">
+        <div class="container offer__container">
+          <h2 class="offer__title title">
+            Откройте для себя уникальные места нашей планеты — Антарктику, Антарктиду и Северный полюс!
+          </h2>
+          <div class="offer__block">
+            <p class="offer__column offer__column_text">
+              Ждем вас на борту экспедиционных судов Poseidon Expeditons
+            </p>
+            <div class="offer__column">
+              <div class="offer__text-block">
+                <p class="offer__text">Вам кажется, что Вы уже везде были и все видели? Что в пределах нашей планеты Вам
+                  уже нечего открывать? Так ли это?</p><br>
+                <p class="offer__text">Многие наши путешественники признаются, что не знали о возможности побывать в тех
+                  уголках Земли, о которых мечтали с детства: Антарктида, Гренландия, Шпицберген, Земля Франца-Иосифа и
+                  Северный полюс. Мы предлагаем Вам отправиться туда, и не просто отправиться, а активно исследовать
+                  первозданный мир полярных регионов.</p><br>
+                <p class="offer__text">Почему именно с Poseidon Expeditons? У нас есть всё для вашего первоклассного
+                  экспедиционного круиза.</p>
+              </div>
+              <a href="" class="offer__link button">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="container subscribe__container">
+          <div class="subscribe__block">
+            <h2 class="subscribe__title title">Подписка на новости</h2>
+            <p class="subscribe__description">Регулярно делимся новыми идеями путешествий и спецпредложения</p>
+
+            <form action="POST" class="subscribe__form subscribe-form">
+              <input type="text" class="subscribe-form__input" placeholder="Ваше имя">
+              <input type="text" class="subscribe-form__input" placeholder="E-mail">
+              <button class="subscribe-form__submit button">Подписаться</button>
+            </form>
+          </div>
+          <div class="subscribe__content partners">
+            <h2 class="partners__title title">
+              Партнеры и ассоциации
+            </h2>
+            <div class="partners__block">
+              <img src="img/partners/partners-01.png" alt="логотип партнера" class="partners__image">
+              <img src="img/partners/partners-02.png" alt="логотип партнера" class="partners__image">
+              <img src="img/partners/partners-03.png" alt="логотип партнера" class="partners__image">
+              <img src="img/partners/partners-04.png" alt="логотип партнера" class="partners__image">
+              <img src="img/partners/partners-05.png" alt="логотип партнера" class="partners__image">
+              <img src="img/partners/partners-06.png" alt="логотип партнера" class="partners__image">
+              <img src="img/partners/partners-07.png" alt="логотип партнера" class="partners__image">
+              <img src="img/partners/partners-08.png" alt="логотип партнера" class="partners__image">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__row contacts">
+          <a href="#" class="contacts__number">+7 (495) 153-28-96</a>
+          <ul class="contacts__list social">
+            <li class="social__item">
+              <a href="#" class="social__link social__link_facebook"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link_instagram"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link_youtube"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__row menu">
+          <div class="menu__row">
+            <p class="menu__title">Наши маршруты</p>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Северный полюс</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Арктика</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Антарктида</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">СПЕЦПРЕДЛОЖЕНИЯ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__row">
+            <p class="menu__title">Путешественникам</p>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Русскоязычные группы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Дополнительные опции</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Что брать с собой</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Куртка Poseidon Expeditions</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Клуб привелегий Poseidon</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Вопросы и ответы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Брошюры</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Статьи</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Видео</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__row">
+            <p class="menu__title">О нас</p>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">О компании</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Наши суда</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Экспедиционная команда</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Пресса о нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Мы помогаем</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Наши партнёры</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Вакансии</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__row menu__row_hide">
+            <p class="menu__title menu__title_invisible">---</p>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Обратная связь</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Вход для партнёров</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__block info">
+            <img src="img/icons/info-logo.png" alt="Герб" class="info__logo">
+            <img src="img/info-text.svg" alt="Федеральное агентство по туризму" class="info__description">
+            <p class="info__text">
+              ООО "ПЕКС" РТО 017346
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__row other">
+          <p class="other__description">
+            © 1999-2021 Poseidon Expeditions. Условия использования и политика конфиденциальности.
+          </p>
+          <a class="other__link nkh">
+            <img src="img/icons/NKH.svg" alt="NKH Studio Логотип" class="nkh__image">
+            <p class="nkh__text">Разработка сайта — NKH Studio</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/compay-script.js"></script>
+
+</body>
+
+</html>
