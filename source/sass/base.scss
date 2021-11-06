@@ -5,6 +5,7 @@
 body {
     @include t4-desk-regular;
     color: $ink-base;
+    padding: 20px;
 }
 
 ul {

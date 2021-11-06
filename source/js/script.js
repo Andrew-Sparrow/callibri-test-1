@@ -103,14 +103,27 @@ function get_statuses() {
 
 const addMarkup = (data) => {
   const obj = JSON.parse(data);
-  let text =  "<ul>"
 
-  obj.map((item) => {
-    text += "<li>" + item.name + "</li>";
+  const formElement = document.createElement('form');
+  const list = document.createElement('ul');
+  list.className = 'list';
+
+  obj.forEach((item) => {
+    const listItem = document.createElement('li');
+    const paragraph = document.createElement('p');
+    paragraph.innerHTML = item.name;
+    listItem.appendChild(paragraph);
+    list.appendChild(listItem);
   });
-  text += "</ul>";
 
-  document.getElementById("deal").innerHTML = text;
+  formElement.appendChild(list);
+  document.getElementById("deal").appendChild(formElement);
+
+  const button = document.createElement('button');
+  button.innerText = 'Сохранить';
+  button.className = 'submit';
+
+  formElement.appendChild(button);
 };
 
 document.addEventListener('keydown',
@@ -119,7 +132,6 @@ document.addEventListener('keydown',
       modal.style.display = "none";
     }
 })
-
 
 btn.onclick = function () {
   addMarkup(dataJSON);
