@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <template class="template">
+    <li class="deal">
+      <p class="deal__name"></p>
+      <div class="deal__container">
+        <input type="radio" class="deal__radio" id="radio-success" name="status" value="success">
+        <label class="deal__label deal__label--success" for="radio-success">Success</label>
+      </div>
+      <div class="deal__container">
+        <input type="radio" class="deal__radio" id="radio-fail" name="status" value="fail">
+        <label class="deal__label deal__label--fail" for="radio-fail">Fail</label>
+      </div>
+      <div class="deal__container">
+        <input type="radio" class="deal__radio" id="radio-open" name="status" value="open">
+        <label class="deal__label deal__label--open" for="radio-open">Open</label>
+      </div>
+    </li>
+  </template>
+
+  <button id="myBtn" class="open">Open Modal</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal__content">
+      <span class="modal__close">&times;</span>
+      <form id="modal-form"></form>
+    </div>
+  </div>
+
+  <script type="module" src="js/mock-data.js"></script>
+  <script type="module" src="js/add-markup.js"></script>
+  <script type="module" src="js/script.js"></script>
+
+</body>
+
+</html>
