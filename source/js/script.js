@@ -107,17 +107,34 @@ const addMarkup = (data) => {
   const formElement = document.createElement('form');
   const list = document.createElement('ul');
   list.className = 'list';
+  var template = document.querySelector(".template");
 
   obj.forEach((item) => {
-    const listItem = document.createElement('li');
-    const paragraph = document.createElement('p');
+    const listItem = template.content.cloneNode(true);
+    const paragraph = listItem.querySelector(".deal__name");
     paragraph.innerHTML = item.name;
-    listItem.appendChild(paragraph);
+
+    const radioButtonOpen = listItem.querySelector("#radio-open");
+    const radioButtonSuccess = listItem.querySelector("#radio-success");
+    const radioButtonFail = listItem.querySelector("#radio-fail");
+
+    switch (item.kind) {
+      case 'open':
+        radioButtonOpen.checked = true;
+        break;
+      case 'success':
+        radioButtonSuccess.checked = true;
+        break;
+      case 'fail':
+        radioButtonFail.checked = true;
+        break;
+    }
+
     list.appendChild(listItem);
   });
 
   formElement.appendChild(list);
-  document.getElementById("deal").appendChild(formElement);
+  document.getElementById("deal-list").appendChild(formElement);
 
   const button = document.createElement('button');
   button.innerText = 'Сохранить';
@@ -133,7 +150,8 @@ document.addEventListener('keydown',
     }
 })
 
+addMarkup(dataJSON);
+
 btn.onclick = function () {
-  addMarkup(dataJSON);
   modal.style.display = "block";
 }
