@@ -6,16 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test</title>
-
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/opensans-light.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" crossorigin>
-
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -24,16 +14,16 @@
     <li class="deal">
       <p class="deal__name"></p>
       <div class="deal__container">
-        <input type="radio" class="deal__radio" id="radio-success">
-        <label class="deal__label" for="radio-success">Success</label>
+        <input type="radio" class="deal__radio" id="radio-success" name="status" value="success">
+        <label class="deal__label deal__label--success" for="radio-success">Success</label>
       </div>
       <div class="deal__container">
-        <input type="radio" class="radio" id="radio-fail">
-        <label class="deal__label" for="radio-fail">Fail</label>
+        <input type="radio" class="deal__radio" id="radio-fail" name="status" value="fail">
+        <label class="deal__label deal__label--fail" for="radio-fail">Fail</label>
       </div>
       <div class="deal__container">
-        <input type="radio" class="radio" id="radio-open">
-        <label class="deal__label" for="radio-open">Open</label>
+        <input type="radio" class="deal__radio" id="radio-open" name="status" value="open">
+        <label class="deal__label deal__label--open" for="radio-open">Open</label>
       </div>
     </li>
   </template>
@@ -42,9 +32,9 @@
 
   <!-- The Modal -->
   <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p id="deal-list"></p>
+    <div class="modal__content">
+      <span class="modal__close">&times;</span>
+      <form id="modal-form"></form>
     </div>
   </div>
 
