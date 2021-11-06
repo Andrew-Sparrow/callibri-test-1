@@ -50,12 +50,12 @@ const addMarkup = (data, modal) => {
 
   formElement.appendChild(list);
 
-  const getDataList = (data) => {
+  const getDataForm = (data) => {
     const list = [];
 
     for (const [name, status] of Object.entries(data)) {
       const id = name.split('-')[1];
-      list.push({id: id, kind: status});
+      list.push({id, kind: status});
     }
 
     return list;
@@ -65,7 +65,7 @@ const addMarkup = (data, modal) => {
     evt.preventDefault();
     const formData = new FormData(formElement);
     const data = Object.fromEntries(formData.entries());
-    alert(JSON.stringify(getDataList(data)));
+    alert(JSON.stringify(getDataForm(data)));
   };
 
   const buttonSubmit = document.createElement('button');
